@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="1100.0" style="-fx-background-color: #99ff66;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="lab.InterfazController">
+   <children>
+      <Button fx:id="btnFileChooser" layoutX="401.0" layoutY="90.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="115.0" prefWidth="299.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 200px; -fx-font-size: 30px;" text="Elegir archivos" />
+      <Label layoutX="69.0" layoutY="296.0" prefHeight="41.0" prefWidth="243.0" text="Operaciones entre matrices" />
+      <TextField fx:id="textM1" layoutX="69.0" layoutY="349.0" promptText="Indice de matriz" />
+      <TextField fx:id="textM2" layoutX="526.0" layoutY="349.0" promptText="Indice de matriz" />
+      <ComboBox fx:id="operacionM" layoutX="328.0" layoutY="349.0" prefWidth="150.0" promptText="Operacion" styleClass="btn" />
+      <Button fx:id="btnOp" layoutX="786.0" layoutY="349.0" mnemonicParsing="false" onAction="#operacion" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 15px; -fx-background-radius: 50px;" text="Realizar operacion" />
+      <Label layoutX="78.0" layoutY="438.0" prefHeight="21.0" prefWidth="173.0" text="Multiplicar con escalar" />
+      <TextField fx:id="textE" layoutX="64.0" layoutY="501.0" promptText="Escalar" />
+      <TextField fx:id="textM3" layoutX="300.0" layoutY="501.0" promptText="Indice de matriz" />
+      <Label layoutX="271.0" layoutY="506.0" prefHeight="21.0" prefWidth="41.0" text="*" />
+      <Button fx:id="btnMultEsc" layoutX="550.0" layoutY="501.0" mnemonicParsing="false" onAction="#mult" prefHeight="31.0" prefWidth="117.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-background-radius: 50px;" text="Multiplcar" />
+   </children>
+</AnchorPane>
